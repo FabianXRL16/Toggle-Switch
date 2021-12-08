@@ -105,3 +105,32 @@ img{
     box-shadow: rgba(27, 27, 27, 0.3) 0px 2px 8px 0px;
 }
 
+/* Material Design */
+.containerSwitchMD{
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.switchOnMD{
+    background-color: #c29ef8;
+}
+.switchOffMD{
+    background-color: #ededed;
+}
+
+.btnMD{
+    height: 43px;
+    width: 43px;
+    box-shadow: rgba(32, 32, 32, 0.5) 1px 1px 5px, rgba(0, 0, 0, 0.23) 0px 3px 5px;
+}
+
+.onMD{
+    background-color: #6300eb;
+}
+
+.offMD{
+    background-color: #FFF;
+}
