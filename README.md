@@ -1,7 +1,7 @@
 # Toggle-Switch
 Diferentes versiones del Switch en apple, google, IBM y microsoft
 
-### Reference image
+## Imagen de Referencia
 
 ![](https://raw.githubusercontent.com/FabianXRL16/Toggle-Switch/master/image.png)
 
