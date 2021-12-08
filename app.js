@@ -110,3 +110,46 @@ function switchC(active) {
     }
   }
 }
+
+// Fluent
+
+let $onF = document.querySelector(".onF");
+let $offF = document.querySelector(".offF");
+
+let $switchOnF = document.querySelector(".switchOnF");
+let $switchOffF = document.querySelector(".switchOffF");
+
+let countF_A = 1;
+let countF_D = 0;
+
+function switchF(active) {
+  if (active) {
+    if (countF_A === 1) {
+      $onF.style.transform = "translateX(0px)";
+      $onF.style.backgroundColor = "#5f5e5c";
+      $switchOnF.style.backgroundColor = "#FFF";
+      $switchOnF.style.border = "2.5px solid #838383";
+      countF_A = 0;
+    } else {
+        $onF.style.transform = "translateX(40px)";
+        $onF.style.backgroundColor = "#FFF";
+        $switchOnF.style.backgroundColor = "#0277d4";
+        $switchOnF.style.border = "none";
+      countF_A = 1;
+    }
+  } else {
+    if (countF_D === 0) {
+      $offF.style.transform = "translateX(40px)";      
+      $offF.style.backgroundColor = "#FFF";
+      $switchOffF.style.backgroundColor = "#0277d4";
+      $switchOffF.style.border = "none";
+      countF_D = 1;
+    } else {
+      $offF.style.transform = "translateX(0px)";     
+       $offF.style.backgroundColor = "#5f5e5c";
+      $switchOffF.style.backgroundColor = "#FFF";
+      $switchOffF.style.border = "2.5px solid #838383";
+      countF_D = 0;
+    }
+  }
+}

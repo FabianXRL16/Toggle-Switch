@@ -204,10 +204,12 @@ img {
 
 .switchOnF {
   background-color: #0277d4;
+  transition: 0.3s;
 }
 .switchOffF {
   background-color: #fff;
   border: 2.5px solid #838383;
+  transition: 0.3s;
 }
 
 .btnF {
@@ -223,4 +225,6 @@ img {
 
 .offF {
   background-color: #5f5e5c;
+  transform: translateX(0px);
+  transition: 0.3s;
 }
