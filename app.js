@@ -71,3 +71,42 @@ function switchMD(active) {
     }
   }
 }
+
+// Carbon
+
+let $onC = document.querySelector(".onC");
+let $offC = document.querySelector(".offC");
+
+let $switchOnC = document.querySelector(".switchOnC");
+let $switchOffC = document.querySelector(".switchOffC");
+
+let countC_A = 1;
+let countC_D = 0;
+
+function switchC(active) {
+  if (active) {
+    if (countC_A === 1) {
+      $onC.style.transform = "translateX(0px)";
+      $onC.style.backgroundColor = "#e0e0e0";
+      $switchOnC.style.backgroundColor = "#8d8d8d";
+      countC_A = 0;
+    } else {
+      $onC.style.transform = "translateX(38px)";
+      $onC.style.backgroundColor = "#FFF";
+      $switchOnC.style.backgroundColor = "#25a14b";
+      countC_A = 1;
+    }
+  } else {
+    if (countC_D === 0) {
+      $offC.style.transform = "translateX(38px)";      
+      $offC.style.backgroundColor = "#FFF";
+      $switchOffC.style.backgroundColor = "#25a14b";
+      countC_D = 1;
+    } else {
+      $offC.style.transform = "translateX(0px)";     
+       $offC.style.backgroundColor = "#e0e0e0";
+      $switchOffC.style.backgroundColor = "#8d8d8d";
+      countC_D = 0;
+    }
+  }
+}

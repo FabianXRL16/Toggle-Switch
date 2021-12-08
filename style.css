@@ -94,11 +94,11 @@ img {
 
 .switchOnIOS {
   background-color: #65c063;
-  transition: .3s;
+  transition: 0.3s;
 }
 .switchOffIOS {
   background-color: #e9e9eb;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btnIOS {
@@ -167,9 +167,11 @@ img {
 
 .switchOnC {
   background-color: #25a14b;
+  transition: 0.3s;
 }
 .switchOffC {
   background-color: #8d8d8d;
+  transition: 0.3s;
 }
 
 .btnC {
@@ -185,6 +187,8 @@ img {
 
 .offC {
   background-color: #e0e0e0;
+  transform: translateX(0px);
+  transition: 0.3s;
 }
 
 /* Fluent */
