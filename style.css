@@ -87,7 +87,7 @@ img{
     border-radius: 30px;
     display: flex;
     align-items: center;
-    padding: 0 3px;
+    padding: 0 4px;
     box-sizing: border-box;
 }
 
@@ -103,6 +103,14 @@ img{
     width: 43px;
     background-color: #FFF;
     box-shadow: rgba(27, 27, 27, 0.3) 0px 2px 8px 0px;
+}
+
+.onIOS{
+    transform: translateX(29px);
+    transition: .3s;
+}
+
+.offIOS{
 }
 
 /* Material Design */
@@ -129,6 +137,8 @@ img{
 
 .onMD{
     background-color: #6300eb;
+    transform: translateX(28px);
+    transition: .3s;
 }
 
 .offMD{
@@ -160,6 +170,8 @@ img{
 
 .onC{
     background-color: #FFF;
+    transform: translateX(38px);
+    transition: .3s;
 }
 
 .offC{
@@ -192,6 +204,8 @@ img{
 
 .onF{
     background-color: #FFF;
+    transform: translateX(40px);
+    transition: .3s;
 }
 
 .offF{
