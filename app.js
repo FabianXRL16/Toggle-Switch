@@ -32,3 +32,42 @@ function switchIOS(active) {
     }
   }
 }
+
+// Material Design
+
+let $onMD = document.querySelector(".onMD");
+let $offMD = document.querySelector(".offMD");
+
+let $switchOnMD = document.querySelector(".switchOnMD");
+let $switchOffMD = document.querySelector(".switchOffMD");
+
+let countMD_A = 1;
+let countMD_D = 0;
+
+function switchMD(active) {
+  if (active) {
+    if (countMD_A === 1) {
+      $onMD.style.transform = "translateX(0px)";
+      $onMD.style.backgroundColor = "#FFF";
+      $switchOnMD.style.backgroundColor = "#ededed";
+      countMD_A = 0;
+    } else {
+      $onMD.style.transform = "translateX(28px)";
+      $onMD.style.backgroundColor = "#6300eb";
+      $switchOnMD.style.backgroundColor = "#c29ef8";
+      countMD_A = 1;
+    }
+  } else {
+    if (countMD_D === 0) {
+      $offMD.style.transform = "translateX(28px)";      
+      $offMD.style.backgroundColor = "#6300eb";
+      $switchOffMD.style.backgroundColor = "#c29ef8";
+      countMD_D = 1;
+    } else {
+      $offMD.style.transform = "translateX(0px)";     
+       $offMD.style.backgroundColor = "#FFF";
+      $switchOffMD.style.backgroundColor = "#ededed";
+      countMD_D = 0;
+    }
+  }
+}

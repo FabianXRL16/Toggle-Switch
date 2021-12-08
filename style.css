@@ -129,9 +129,11 @@ img {
 
 .switchOnMD {
   background-color: #c29ef8;
+  transition: 0.3s;
 }
 .switchOffMD {
   background-color: #ededed;
+  transition: 0.3s;
 }
 
 .btnMD {
@@ -148,6 +150,8 @@ img {
 
 .offMD {
   background-color: #fff;
+  transform: translateX(0px);
+  transition: 0.3s;
 }
 
 /* Carbon */
