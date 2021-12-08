@@ -107,7 +107,7 @@ img{
 
 /* Material Design */
 .containerSwitchMD{
-    width: 80px;
+    width: 70px;
     height: 30px;
     border-radius: 30px;
     display: flex;
@@ -133,4 +133,35 @@ img{
 
 .offMD{
     background-color: #FFF;
+}
+
+/* Carbon */
+.containerSwitchC{
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+.switchOnC{
+    background-color: #25a14b;
+}
+.switchOffC{
+    background-color: #8d8d8d;
+}
+
+.btnC{
+    height: 29px;
+    width: 29px;
+}
+
+.onC{
+    background-color: #FFF;
+}
+
+.offC{
+    background-color: #e0e0e0;
 }
