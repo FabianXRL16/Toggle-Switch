@@ -1,213 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
 
-:root{
-    font-family: 'Nunito', sans-serif;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #8fd5e9;
-    display: grid;
-    place-content: center;
+:root {
+  font-family: "Nunito", sans-serif;
 }
 
-.container{
-    width: 400px;
-    height: 430px;
-    display: grid;
-    grid-template-rows: repeat(5, 100px);
-    gap: 10px;
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #8fd5e9;
+  display: grid;
+  place-content: center;
 }
 
-.item{
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    display: grid;
-    grid-template-columns: 1.5fr 3fr;
+.container {
+  width: 400px;
+  height: 430px;
+  display: grid;
+  grid-template-rows: repeat(5, 100px);
+  gap: 10px;
 }
 
-.snippet{
-    border-right: 3px solid #8fd5e9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(73, 73, 73);
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
 }
 
-.logo{
-    width: 30px;
-    height: 30px;
-    background-color: #FFF;
-    display: flex;
-    justify-content: center;
-}
-img{
-    width: auto;
-    height: 25px;
-}
-.logoPlus{
-    height: 38px;
-    margin-top: -5px;
-}
-.name{
-    font-weight: 600;
-    font-size: 12px;
-}
-.company{
-    font-weight: 200;
-    font-size: 10px;
+.snippet {
+  border-right: 3px solid #8fd5e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(73, 73, 73);
 }
 
-.content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.logo {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: auto;
+  height: 25px;
+}
+.logoPlus {
+  height: 38px;
+  margin-top: -5px;
+}
+.name {
+  font-weight: 600;
+  font-size: 12px;
+}
+.company {
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Btn */
-.btn{
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
+.btn {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 /* IOS */
-.containerSwitchIOS{
-    width: 80px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 0 4px;
-    box-sizing: border-box;
+.containerSwitchIOS {
+  width: 80px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  box-sizing: border-box;
 }
 
-.switchOnIOS{
-    background-color: #65c063;
+.switchOnIOS {
+  background-color: #65c063;
+  transition: .3s;
 }
-.switchOffIOS{
-    background-color: #e9e9eb;
-}
-
-.btnIOS{
-    height: 43px;
-    width: 43px;
-    background-color: #FFF;
-    box-shadow: rgba(27, 27, 27, 0.3) 0px 2px 8px 0px;
+.switchOffIOS {
+  background-color: #e9e9eb;
+  transition: .3s;
 }
 
-.onIOS{
-    transform: translateX(29px);
-    transition: .3s;
+.btnIOS {
+  height: 43px;
+  width: 43px;
+  background-color: #fff;
+  box-shadow: rgba(27, 27, 27, 0.3) 0px 2px 8px 0px;
 }
 
-.offIOS{
+.onIOS {
+  transform: translateX(29px);
+  transition: 0.3s;
+}
+
+.offIOS {
+  transform: translateX(0px);
+  transition: 0.3s;
 }
 
 /* Material Design */
-.containerSwitchMD{
-    width: 70px;
-    height: 30px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
+.containerSwitchMD {
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.switchOnMD{
-    background-color: #c29ef8;
+.switchOnMD {
+  background-color: #c29ef8;
 }
-.switchOffMD{
-    background-color: #ededed;
-}
-
-.btnMD{
-    height: 43px;
-    width: 43px;
-    box-shadow: rgba(32, 32, 32, 0.5) 1px 1px 5px, rgba(0, 0, 0, 0.23) 0px 3px 5px;
+.switchOffMD {
+  background-color: #ededed;
 }
 
-.onMD{
-    background-color: #6300eb;
-    transform: translateX(28px);
-    transition: .3s;
+.btnMD {
+  height: 43px;
+  width: 43px;
+  box-shadow: rgba(32, 32, 32, 0.5) 1px 1px 5px, rgba(0, 0, 0, 0.23) 0px 3px 5px;
 }
 
-.offMD{
-    background-color: #FFF;
+.onMD {
+  background-color: #6300eb;
+  transform: translateX(28px);
+  transition: 0.3s;
+}
+
+.offMD {
+  background-color: #fff;
 }
 
 /* Carbon */
-.containerSwitchC{
-    width: 80px;
-    height: 40px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 0 6px;
-    box-sizing: border-box;
+.containerSwitchC {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  box-sizing: border-box;
 }
 
-.switchOnC{
-    background-color: #25a14b;
+.switchOnC {
+  background-color: #25a14b;
 }
-.switchOffC{
-    background-color: #8d8d8d;
-}
-
-.btnC{
-    height: 29px;
-    width: 29px;
+.switchOffC {
+  background-color: #8d8d8d;
 }
 
-.onC{
-    background-color: #FFF;
-    transform: translateX(38px);
-    transition: .3s;
+.btnC {
+  height: 29px;
+  width: 29px;
 }
 
-.offC{
-    background-color: #e0e0e0;
+.onC {
+  background-color: #fff;
+  transform: translateX(38px);
+  transition: 0.3s;
+}
+
+.offC {
+  background-color: #e0e0e0;
 }
 
 /* Fluent */
-.containerSwitchF{
-    width: 80px;
-    height: 40px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
-    box-sizing: border-box;
+.containerSwitchF {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
 }
 
-.switchOnF{
-    background-color: #0277d4;
+.switchOnF {
+  background-color: #0277d4;
 }
-.switchOffF{
-    background-color: #FFF;
-    border: 2.5px solid #838383;
-}
-
-.btnF{
-    height: 25px;
-    width: 25px;
+.switchOffF {
+  background-color: #fff;
+  border: 2.5px solid #838383;
 }
 
-.onF{
-    background-color: #FFF;
-    transform: translateX(40px);
-    transition: .3s;
+.btnF {
+  height: 25px;
+  width: 25px;
 }
 
-.offF{
-    background-color: #5f5e5c;
+.onF {
+  background-color: #fff;
+  transform: translateX(40px);
+  transition: 0.3s;
+}
+
+.offF {
+  background-color: #5f5e5c;
 }
